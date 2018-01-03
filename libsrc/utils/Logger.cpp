@@ -96,7 +96,7 @@ Logger::Logger ( QString name, LogLevel minLevel )
 #ifdef __GLIBC__
     const char* _appname_char = program_invocation_short_name;
 #else
-    const char* _appname_char = getprogname();
+    const char* _appname_char = "hyperion";
 #endif
 	_appname = QString(_appname_char).toLower();
 
