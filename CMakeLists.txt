@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.0.0)
 PROJECT(hyperion)
 
 # Instruct CMake to run moc automatically when needed.
-set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOMOC OFF)
 # auto prepare .qrc files
-set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTORCC OFF)
 
 IF ( POLICY CMP0026 )
 	CMAKE_POLICY( SET CMP0026 OLD )
